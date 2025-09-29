@@ -1,0 +1,221 @@
+
+EXPERIMENT 1:
+Probabilística: False
+CNF: False
+Paraula pertany: False
+
+Gramàtica original generada:
+(S, ['d', 'a'])
+(S, ['X1', 'c', 'X1'])
+(S, ['l', 'a'])
+(X1, ['S', 'X2', 'X3'])
+(S, ['v', 's', 'r'])
+(S, ['u'])
+(X1, ['j'])
+(X2, ['p'])
+(X3, ['l'])
+(X2, ['X2', 'u', 'S'])
+(X1, ['X1', 'q', 'X3'])
+
+--- S'ha convertit a CNF ---
+Gramàtica transformada a CNF:
+(S, ['T_D', 'T_A'])
+(S, ['X1', 'Y1'])
+(Y1, ['T_C', 'X1'])
+(S, ['T_L', 'T_A'])
+(X1, ['S', 'Y2'])
+(Y2, ['X2', 'X3'])
+(S, ['T_V', 'Y3'])
+(Y3, ['T_S', 'T_R'])
+(S, ['u'])
+(X1, ['j'])
+(X2, ['p'])
+(X3, ['l'])
+(X2, ['X2', 'Y4'])
+(Y4, ['T_U', 'S'])
+(X1, ['X1', 'Y5'])
+(Y5, ['T_Q', 'X3'])
+(S, ['X1', 'Y6'])
+(Y6, ['T_C', 'X1'])
+(X1, ['S', 'Y7'])
+(Y7, ['X2', 'X3'])
+(S, ['T_V', 'Y8'])
+(Y8, ['T_S', 'T_R'])
+(X2, ['X2', 'Y9'])
+(Y9, ['T_U', 'S'])
+(X1, ['X1', 'Y10'])
+(Y10, ['T_Q', 'X3'])
+(S_START, ['T_D', 'T_A'])
+(S_START, ['X1', 'Y11'])
+(Y11, ['T_C', 'X1'])
+(S_START, ['T_L', 'T_A'])
+(S_START, ['T_V', 'Y12'])
+(Y12, ['T_S', 'T_R'])
+(S_START, ['u'])
+(T_D, ['d'])
+(T_A, ['a'])
+(T_C, ['c'])
+(T_L, ['l'])
+(T_V, ['v'])
+(T_S, ['s'])
+(T_R, ['r'])
+(T_U, ['u'])
+(T_Q, ['q'])
+
+Paraula generada: ca
+La paraula pertany al llenguatge de la gramàtica: False
+
+================================================================================
+
+EXPERIMENT 2:
+Probabilística: False
+CNF: False
+Paraula pertany: True
+
+Gramàtica original generada:
+(S, ['p', 'f'])
+(S, ['X1', 'c', 'X1'])
+(S, ['l'])
+(X1, ['m', 'S', 'X2'])
+(X2, ['X1', 'd', 'S'])
+(X1, ['g', 'w', 'X3', 'X4'])
+(X2, ['x'])
+(X3, ['k'])
+(X1, ['z'])
+(X4, ['z'])
+(X1, ['X1', 'c', 'S'])
+(X1, ['X1', 'b', 'X3'])
+
+--- S'ha convertit a CNF ---
+Gramàtica transformada a CNF:
+(S, ['T_P', 'T_F'])
+(S, ['X1', 'Y1'])
+(Y1, ['T_C', 'X1'])
+(S, ['l'])
+(X1, ['T_M', 'Y2'])
+(Y2, ['S', 'X2'])
+(X2, ['X1', 'Y3'])
+(Y3, ['T_D', 'S'])
+(X1, ['T_G', 'Y4'])
+(Y4, ['T_W', 'Y5'])
+(Y5, ['X3', 'X4'])
+(X2, ['x'])
+(X3, ['k'])
+(X1, ['z'])
+(X4, ['z'])
+(X1, ['X1', 'Y6'])
+(Y6, ['T_C', 'S'])
+(X1, ['X1', 'Y7'])
+(Y7, ['T_B', 'X3'])
+(S, ['X1', 'Y8'])
+(Y8, ['T_C', 'X1'])
+(X1, ['T_M', 'Y9'])
+(Y9, ['S', 'X2'])
+(X2, ['X1', 'Y10'])
+(Y10, ['T_D', 'S'])
+(X1, ['T_G', 'Y11'])
+(Y11, ['T_W', 'Y12'])
+(Y12, ['X3', 'X4'])
+(X1, ['X1', 'Y13'])
+(Y13, ['T_C', 'S'])
+(X1, ['X1', 'Y14'])
+(Y14, ['T_B', 'X3'])
+(S_START, ['T_P', 'T_F'])
+(S_START, ['X1', 'Y15'])
+(Y15, ['T_C', 'X1'])
+(S_START, ['l'])
+(T_P, ['p'])
+(T_F, ['f'])
+(T_C, ['c'])
+(T_M, ['m'])
+(T_D, ['d'])
+(T_G, ['g'])
+(T_W, ['w'])
+(T_B, ['b'])
+
+Paraula generada: mlxcmlx
+La paraula pertany al llenguatge de la gramàtica: True
+
+================================================================================
+
+EXPERIMENT 3:
+Probabilística: False
+CNF: True
+Paraula pertany: False
+
+Gramàtica original generada:
+(S, ['X1', 'X1'])
+(S, ['g'])
+(X1, ['X2', 'X2'])
+(X1, ['X2', 'S'])
+(X2, ['b'])
+(X1, ['l'])
+(X2, ['X2', 'S'])
+(X1, ['X1', 'X2'])
+
+Paraula generada: btb
+La paraula pertany al llenguatge de la gramàtica: False
+
+================================================================================
+
+EXPERIMENT 4:
+Probabilística: False
+CNF: True
+Paraula pertany: True
+
+Gramàtica original generada:
+(S, ['X1', 'X1'])
+(S, ['q'])
+(S, ['X1', 'X2'])
+(X2, ['X1', 'S'])
+(S, ['X2', 'X1'])
+(X1, ['c'])
+(X2, ['p'])
+(X1, ['X1', 'X2'])
+
+Paraula generada: cpcqcpcq
+La paraula pertany al llenguatge de la gramàtica: True
+
+================================================================================
+
+EXPERIMENT 5:
+Probabilística: True
+CNF: True
+Paraula pertany: False
+
+Gramàtica probabilística generada (CNF):
+(S, ['X1', 'X1']) -> 0.3400
+(S, ['z']) -> 0.3400
+(S, ['S', 'X1']) -> 0.3200
+(X1, ['e']) -> 0.1700
+(X1, ['S', 'X2']) -> 0.4700
+(X1, ['X2', 'S']) -> 0.3600
+(X2, ['q']) -> 0.4000
+(X2, ['X2', 'X1']) -> 0.6000
+
+Paraula generada: iqzeq
+La paraula **NO** pertany al llenguatge (probabilitat = 0)
+
+================================================================================
+
+EXPERIMENT 6:
+Probabilística: True
+CNF: True
+Paraula pertany: True
+
+Gramàtica probabilística generada (CNF):
+(S, ['X1', 'X1']) -> 0.4400
+(S, ['f']) -> 0.1200
+(S, ['X1', 'X2']) -> 0.4400
+(X2, ['z']) -> 1.0000
+(X1, ['X3', 'X3']) -> 0.5000
+(X1, ['w']) -> 0.2600
+(X1, ['X1', 'X2']) -> 0.2400
+(X3, ['S', 'X2']) -> 0.1100
+(X3, ['n']) -> 0.1000
+(X3, ['X3', 'X2']) -> 0.7800
+
+Paraula generada: nnzz
+Probabilitat d'aquesta paraula segons la gramàtica: 0.0017160000000000003
+
+================================================================================
